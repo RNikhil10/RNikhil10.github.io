@@ -13,8 +13,25 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  // While the mobile menu is open: lock page scroll, close on Escape or when the
+  // viewport grows past the mobile breakpoint (e.g. rotating a phone to landscape).
+  useEffect(() => {
+    if (!open) return
+    const wide = window.matchMedia('(min-width: 601px)')
+    const close = () => setOpen(false)
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && close()
+    document.body.style.overflow = 'hidden'
+    window.addEventListener('keydown', onKey)
+    wide.addEventListener('change', close)
+    return () => {
+      document.body.style.overflow = ''
+      window.removeEventListener('keydown', onKey)
+      wide.removeEventListener('change', close)
+    }
+  }, [open])
+
   return (
-    <header className={`navbar ${scrolled ? 'navbar--solid' : ''}`}>
+    <header className={`navbar ${scrolled || open ? 'navbar--solid' : ''}`}>
       <nav className="container navbar__inner" aria-label="Main">
         <a href="#home" className="navbar__brand">
           <img src={profile.logo} alt={`${profile.fullName} logo`} />
@@ -40,6 +57,7 @@ export default function Navbar() {
           ))}
         </ul>
       </nav>
+      {open && <div className="navbar__backdrop" onClick={() => setOpen(false)} aria-hidden />}
     </header>
   )
 }
