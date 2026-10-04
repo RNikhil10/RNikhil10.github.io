@@ -1,155 +1,17 @@
-<!--
-Resume Builder
--->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content= "IE=Edge">
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
-        <title> Nikhil Yengala Reddy Portfolio</title>
-        <link rel="stylesheet" href="NYStyle.css">
-       
-        <script src="https://kit.fontawesome.com/3fa6c9c42b.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <img src="Images/Logo3.jpg" class="logo">
-                    <ul id="menuside">
-                        <li><a href="#header"> Home </a></li>
-                        <li><a href="#about"> About </a></li>
-                        <li><a href="#portfolio"> Portfolio </a></li>
-                        <li><a href="#contact"> Contact </a></li>
-                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                </nav>
-            <div class="header-text">
-                <p>Bioinformatics Analyst | Data Scientist | UI/UX Designer </p>
-                <h1>Hi, I am <span>Nikhil</span>! </h1>
-
-            </div>
-            </div>
-
-        </div>
-    <!-----------------------------------About----------------------------------------------------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="Images/Nikhil-04.JPG" class="SecondImage">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="subabout">About Me</h1>
-                    <p class="Aboutmeinfo"> 
-                        <br>As a recent Bioinformatics graduate from Johns Hopkins University with a foundation in interdisciplinary research, I excel at bridging the gap between biology, data science, and technology to help in innovation, data analysis, and machine learning processes. With the Master’s degree, I bring unique skills that allow me to help develop new products for users and upkeep databases that assist clients. 
-                        <br><br>Expanding beyond bioinformatics, I have also experimented in the field of data science and UI/UX designs where I apply my analytical abilities and creative problem-solving skills to enhance user experience and data visualizations. Using a multidisciplinary approach enables me to provide comprehensive solutions that are user-friendly, intuitive, and effective. My objective is to make difficult information understandable and useful, whether that is accomplished through developing data-driven strategies or creating visually appealing and useful interfaces. 
-                        <br><br>My experience in the field of bioinformatics, enhanced with data science techniques and UI/UX design concepts, demonstrates my dedication to creativity and quality. I have a strong goal to leverage my broad skill set to further the creation of platforms and tools that facilitate important research and produce memorable user experiences. 
-                        <br><br>Beyond my professional aspects, I find pleasure in a variety of hobbies that enrich my life and creativity. Photography holds a special place in my heart, and I have a passion for capturing nature and subjects that can be showcased at lmpbay.com. Basketball and hiking also play a vital role in my life by allowing me to stay active and engage in friendly competition while team building and connecting with nature during my hiking sessions. I am motivated by a desire to acquire new things whenever I have the opportunity, whether they are experiences, skills, or pieces of knowledge.
-                    </p>
-                    <div class="tabtitles">
-                        <h3 class="tablink activelink" onclick="opentab('education')">Education</h3>
-                        <h3 class="tablink" onclick="opentab('experience')">Experience</h3>
-                        <h3 class="tablink" onclick="opentab('skills')">Skills</h3>
-                        
-                    </div>
-                    <div class="tabcontents activetab" id="education">
-                        <ul>
-                            <li><span>2021-2023</span><br>MS in Bioinformatics | Johns Hopkins University, Maryland </li>
-                            <li><span> 2018-2021</span><br>BS in Molecular Biology, Minor Chemistry | San Jose State University, California</li>
-                        </ul>
-                    </div>
-                    <div class="tabcontents" id="experience">
-                        <ul>
-                            <li><span>2024-Current</span><br>Florida Health | AMD Bioinformatician | Remote </li>
-                            <li><span>2024-2024</span><br>Thermo Fisher Scientific | Associate Scientist | Madison, WI </li>
-                            <li><span>2020-2020</span><br>Research | Department of Microbiology and Bioinformatics | San Jose State University </li>
-                            <li><span> 2019-2019</span><br>Bioinformatics Academic Project | Department of Bioinformatics | San Jose State University </li>
-                        </ul>
-                    </div>
-
-                    <div class="tabcontents" id="skills">
-                        <ul>
-                            <li><span>Python</span><br> Pandas, Spark, Jupyter </li>
-                            <li><span>Java</span></li>
-                            <li><span>HTML</span></li>
-                            <li><span>CSS</span></li>
-                            <li><span>JS</span></li>
-                            <li><span>SQL</span></li>
-                            <li><span>R</span><br> ggplot, shiny</li>
-                            <li><span>Linux/Unix</span></li>
-                            <li><span>NGS</span></li>
-                            <li><span>Tableau</span></li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <!---------------------------------------------------------------Portfolio------------------------------------------------------------------->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="subabout">Projects</h1>
-            <div class="portlist">
-                <div>
-                    <i class="fa-solid fa-dna"></i>
-                    <h2>Genomic Analyst</h2>
-                    <p>I'm a specialist in genomic analysis, where I use cutting-edge computational tools to interpret the huge and complicated data recorded within genomes. I draw on my experience in bioinformatics and data science in this work. In order to find patterns, variations, and possible biomarkers related to health, disease, and evolutionary biology, I collect, analyze, and interpret genetic data using a combination of bioinformatics tools and machine learning techniques. Click on the learn more to look at one of my tableau projects on Clear Renal Cell Carcinoma. </p>
-                    <a href="https://public.tableau.com/views/Normal_TumorRCC/ClearRCCDashboard?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-python"></i>
-                    <h2>Python Developer</h2>
-                    <p>I use my experience to design, develop, and implement strong software solutions that are scalable and efficient in the field of Python programming. With my extensive knowledge in bioinformatics and data science, along with my fluency in Python, I am able to design methods and create applications that tackle challenging data analysis problems. I am proficient with several of Python's many libraries and frameworks, including Pandas for data analysis, Matplotlib and Seaborn for data visualization, NumPy for manipulating numerical data, and SciPy for scientific computing.</p>
-                    
-                </div>
-
-                <div>
-                    <i class="fa-brands fa-html5"></i>
-                    <h2>Web Developer</h2>
-                    <p>Creating seamless user experiences (UX) with accessible and responsive design concepts at the forefront is the focus of my user-centered approach to web development. I make sure that the web applications I create are not only functional but also accessible and pleasurable to use on a variety of platforms and devices by incorporating my UI/UX design talents.</p>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!----------------------------------------------------------------Contact------------------------------------------------------------------------>
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contactleft">
-                    <h1 class="subabout">Contact Me</h1>
-                    <p><i class="fa-regular fa-envelope"></i> nikhilyv@hotmail.com</p>
-                    <div class="socialicon">
-                        <a href="https://www.linkedin.com/in/nikhil-yengala-reddy-b318b1229/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/r.nikhil10/"><i class="fa-brands fa-instagram"></i></a>
-
-                    </div>
-                    <a href="Images/NYResume.pdf" download class="download">Download CV</a>
-                </div>
-                <div class="contactright">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Name" required>
-                        <input type="email" name="Email" placeholder="Email" required>
-                        <textarea name="Message" rows="5" placeholder="Message"></textarea>
-                        <button type="submit" class="submitbut">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p> ©2024 Nikhil </p>
-        </div>
-    </div>
-
-<!--------------------------------------------Java Program File------------------------------------------------------>
-    <script src="NYScript.js"></script>
-    
-    </body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikhil Yengala Reddy — Bioinformatics Analyst, Data Scientist and UI/UX Designer." />
+    <link rel="icon" href="/images/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+    <title>Nikhil Yengala Reddy | Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
